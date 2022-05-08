@@ -1,0 +1,29 @@
+{
+  "name": "graphql_intro",
+  "version": "1.0.0",
+  "description": "New description",
+  "main": "dist/index.js",
+  "scripts": {
+    "comment": "TODO: if we use tsc, then nodemon doesn't reload. How to do this?",
+    "devStart": "tsc && nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/seedrandom": "^3.0.2",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "apollo-server": "^3.7.0",
+    "cuid": "^2.1.8",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.4.0",
+    "nvm": "^0.0.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
