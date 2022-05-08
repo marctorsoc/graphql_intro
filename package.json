@@ -4,7 +4,7 @@
   "description": "New description",
   "main": "dist/index.js",
   "scripts": {
-    "comment": "TODO: if we use tsc, then nodemon doesn't reload. How to do this?",
+    "comment": "# TODO: if we use tsc, then nodemon doesn't reload. How to do this?",
     "devStart": "tsc && nodemon dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
