@@ -1,12 +1,12 @@
 # What
 
-A toy example of graphql based on the following videos:
+A toy example of graphql. Sources:
 * https://www.youtube.com/watch?v=ZQL7tL2S0oQ
 * https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f
+* https://fullstackopen.com/en/part8
 
 ... this is a work in progress ...
 Missing:
-- Mutations
 - Solve TODOs
 - Add some Frontend
 - Use a Database
