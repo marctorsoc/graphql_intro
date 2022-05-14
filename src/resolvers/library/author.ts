@@ -24,4 +24,12 @@ export const getBooksForAuthor = function(author: Author) {
 export const getNumBooksForAuthor = function(author: Author) {
     return getBooksForAuthor(author).length
 }
- 
+
+export const getAgeForAuthor = function(author: Author) {
+    console.log(author)
+    console.log(author.yearDeath === undefined)
+    if(author.yearDeath !== undefined)
+        return null
+    let currentYear = new Date().getFullYear()
+    return currentYear -  author.yearBorn
+}

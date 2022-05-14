@@ -1,7 +1,8 @@
 # What
 
-A toy example of graphql based on 
-this [video](`https://www.youtube.com/watch?v=ZQL7tL2S0oQ`).
+A toy example of graphql based on the following videos:
+* https://www.youtube.com/watch?v=ZQL7tL2S0oQ
+* https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f
 
 ... this is a work in progress ...
 Missing:
@@ -30,16 +31,80 @@ To recreate what's needed for this toy project:
 
 ```
 brew install yarn
-yarn add express express-graphql graphql  (# TODO: add the missing ones) 
+yarn install
+```
+
+In general, we could do like 
+
+```
+yarn add express express-graphql graphql
 yarn add --dev nodemon
 ``` 
 
-This will generate the file `yarn.lock` which is the analogous to
-`requirements.txt` in Python. 
+This would generate the file `yarn.lock` which is the analogous to
+`requirements.txt` in Python, and these packages to `package.json`.
 
 ## How to run the server
 
 `yarn run devStart`
 
 and go to `localhost:5000/graphiql`
+
+
+# Example queries and mutations
+
+```
+query Queries{
+  authors {
+    #id,
+    name,
+    #num_books,
+    yearBorn,
+    age,
+    #books {
+    #  name
+    #},
+  },
+  #author(id: "0770663089") {
+  #  name
+  #},
+  #books {
+  #  id,
+  #  name,
+  #  year,
+  #  author {
+  #    name
+  #  }
+  #},
+  #books {
+  #  id,
+  #},
+  #book(id: "1297929770") {
+  #  name,
+  #  year,
+  #  author {
+  #  	name,
+  #	}
+  #},
+  #books_where(id: "1297929770", year: 1942) {
+  #  name,
+  #  author {
+  #    name
+  #  },
+  #  year
+  #},
+}
+
+mutation addMarc{
+  addAuthor(
+    name: "Marc",
+    yearBorn: 1988,
+  ){
+    id,
+    name,
+    yearBorn,
+    yearDeath
+  }
+}
+```
 
