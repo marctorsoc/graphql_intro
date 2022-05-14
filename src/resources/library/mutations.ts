@@ -38,7 +38,6 @@ export const LibraryMutations = {
           yearBorn: {type: GraphQLInt},
           yearDeath: {type: GraphQLInt},
         },
-        // TODO: typehint correctly
         resolve: (parent: any, args: any) => {
           const author = { id: generateUuid(), name: args.name, yearBorn: args.yearBorn, yearDeath: args.yearDeath }
           authors.push(author)
