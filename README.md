@@ -7,7 +7,6 @@ A toy example of graphql. Sources:
 
 ... this is a work in progress ...
 Missing:
-- Solve TODOs
 - Add some Frontend
 - Use a Database
 
@@ -46,9 +45,14 @@ This would generate the file `yarn.lock` which is the analogous to
 
 ## How to run the server
 
+` yarn run start`
+
+and go to `localhost:5000/graphiql`, or
+
 `yarn run devStart`
 
-and go to `localhost:5000/graphiql`
+if you want to reload the server when doing 
+changes to code.
 
 
 # Example queries and mutations
